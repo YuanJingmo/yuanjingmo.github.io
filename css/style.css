@@ -62,7 +62,7 @@ nav ul.center {
 /* 页面底部文字 */
 .bottom-text {
     position: fixed;          /* 固定在屏幕底部 */
-    bottom: 2vh;             /* 比底部按钮高出一点，保持间距 */
+    bottom: 4vh;             /* 比底部按钮高出一点，保持间距 */
     left: 5vw;
     width: 100%;              /* 宽度自适应屏幕 */
     text-align: left;       /* 居中显示 */
@@ -93,3 +93,4 @@ nav ul.center {
 .links img { height:auto; }
 .xiaohongshu-icon img { height:15px; }
 .bilibili-icon img { height:13px; }
+
