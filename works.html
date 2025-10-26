@@ -44,5 +44,28 @@
             </ul>
         </nav>
     </header>
+
+    <!-- 中间水平滚动图片模块 -->
+    <section class="work-gallery">
+        <div class="work-container">
+            <a href="pages/work1.html"><img src="images/works/work1.jpg" alt="Work 1"></a>
+            <a href="pages/work2.html"><img src="images/works/work2.jpg" alt="Work 2" class="centered"></a>
+            <a href="pages/work3.html"><img src="images/works/work3.jpg" alt="Work 3"></a>
+            <a href="pages/work4.html"><img src="images/works/work4.jpg" alt="Work 4"></a>
+            <a href="pages/work5.html"><img src="images/works/work5.jpg" alt="Work 5"></a>
+            <a href="pages/work6.html"><img src="images/works/work6.jpg" alt="Work 6"></a>
+            <a href="pages/work7.html"><img src="images/works/work7.jpg" alt="Work 7"></a>
+        </div>
+    </section>
+
+    <script>
+        // 鼠标滚轮水平滚动
+        const container = document.querySelector('.work-container');
+        const scrollSpeed = 3; // 调整这个数值，>1 更快，<1 更慢
+        container.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            container.scrollLeft += e.deltaY * scrollSpeed;
+        });
+    </script>
 </body>
 </html>
