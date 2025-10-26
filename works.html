@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,3 +70,76 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKS-YJM</title>
+    <link rel="stylesheet" href="css/style-works.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+
+    <!-- iOS / Apple 主屏幕图标 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- PWA / Android 图标 -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/web-app-manifest-512x512.png">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- 左上角 INTRO -->
+            <ul class="left">
+                <li><a href="intro.html">INTRO</a></li>
+            </ul>
+
+            <!-- 中间 HOME -->
+            <ul class="center">
+                <li>
+                    <a href="index.html">
+                        <img src="images/home.svg" alt="Home" class="home-icon"">
+                    </a>
+                </li>
+            </ul>
+
+            <!-- 右上角 COURSES -->
+            <ul class="right">
+                <li><a href="courses.html">COURSES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 中间水平滚动图片模块 -->
+    <section class="work-gallery">
+        <div class="work-container">
+            <a href="pages/work1.html"><img src="images/works/work1.jpg" alt="Work 1"></a>
+            <a href="pages/work2.html"><img src="images/works/work2.jpg" alt="Work 2" class="centered"></a>
+            <a href="pages/work3.html"><img src="images/works/work3.jpg" alt="Work 3"></a>
+            <a href="pages/work4.html"><img src="images/works/work4.jpg" alt="Work 4"></a>
+            <a href="pages/work5.html"><img src="images/works/work5.jpg" alt="Work 5"></a>
+            <a href="pages/work6.html"><img src="images/works/work6.jpg" alt="Work 6"></a>
+            <a href="pages/work7.html"><img src="images/works/work7.jpg" alt="Work 7"></a>
+        </div>
+    </section>
+
+    <script>
+        // 鼠标滚轮水平滚动
+        const container = document.querySelector('.work-container');
+        const scrollSpeed = 3; // 调整这个数值，>1 更快，<1 更慢
+        container.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            container.scrollLeft += e.deltaY * scrollSpeed;
+        });
+    </script>
+</body>
+</html>
+>>>>>>> Stashed changes

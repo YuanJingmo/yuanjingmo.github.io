@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* 导入自定义字体 */
 @font-face {
     font-family: 'mainfont';
@@ -56,4 +57,64 @@ nav ul.center li a .home-icon {
     width: auto;  /* 保持图标比例 */
     height: 24px; /* 设置固定的高度 */
     vertical-align: middle; /* 确保图标和文字垂直对齐 */
+=======
+/* 导入自定义字体 */
+@font-face {
+    font-family: 'mainfont';
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+/* 设置整个网站的默认字体 */
+body {
+    font-family: 'mainfont', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;  /* 设置空白区域为黑色 */
+}
+
+/* 顶部导航栏 */
+header {
+    background-color: #111111;
+    color: rgb(255, 255, 255);
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav ul { list-style: none; margin:0; padding:0; }
+nav ul li { display:inline; }
+nav ul li a { color:white; text-decoration:none; font-size:14px; }
+nav ul li a:hover { text-decoration:underline; }
+
+/* 中间 HOME 图标位置单独设置 */
+nav ul.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  /* 居中 */
+}
+
+/* 中间 HOME 图标 */
+nav ul.center li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul.center li a .home-icon {
+    width: auto;  /* 保持图标比例 */
+    height: 24px; /* 设置固定的高度 */
+    vertical-align: middle; /* 确保图标和文字垂直对齐 */
+>>>>>>> Stashed changes
 }
