@@ -76,5 +76,46 @@
             </a>
         </section>
     </main>
+
+
+
+
+
+    <audio id="bgm" src="music.mp3" autoplay loop></audio>
+
+    <button id="mute-btn">🔇</button>
+
+    <script>
+    const audio = document.getElementById('bgm');
+    const btn = document.getElementById('mute-btn');
+
+    // 设置按钮样式
+    btn.style.position = 'fixed';
+    btn.style.bottom = '20px';
+    btn.style.left = '20px';
+    btn.style.background = 'rgba(0,0,0,0.5)';
+    btn.style.color = 'white';
+    btn.style.border = 'none';
+    btn.style.borderRadius = '8px';
+    btn.style.padding = '6px 10px';
+    btn.style.cursor = 'pointer';
+    btn.style.fontSize = '18px';
+
+    // 静音切换
+    btn.onclick = () => {
+        audio.muted = !audio.muted;
+        btn.textContent = audio.muted ? '🔇' : '🔊';
+    };
+
+    // 自动播放可能被浏览器阻止
+    document.addEventListener('click', () => {
+        if (audio.paused) audio.play();
+    });
+    </script>
+
+
+
+
+
 </body>
 </html>
